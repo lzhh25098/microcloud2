@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface ProductMapper {
-    Product findById(@Param("findById")Long id);
+    Product findById(@Param("id")Long id);
 
     List<Product> findAll();
 
