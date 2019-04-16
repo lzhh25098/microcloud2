@@ -18,8 +18,8 @@ public class ProductController {
     private ProductService pd;
     @Resource
     private DiscoveryClient discoveryClient; //进行服务注册与发现
-    @RequestMapping(value = "/get/id")
-    public Object get(@PathVariable long id){
+    @RequestMapping(value = "/get/{id}")
+    public Object get(@PathVariable("id") long id){
         return pd.findById(id);
     }
     @RequestMapping(value = "/list")
