@@ -2,7 +2,6 @@ package cn.enjoy.Controller;
 
 import cn.enjoy.service.ProductService;
 import cn.enjoy.vo.Product;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
